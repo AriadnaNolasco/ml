@@ -1,0 +1,291 @@
+/* src/assets/css/usuarios.css */
+.usuarios-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.usuarios-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.btn-agregar {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-agregar:hover {
+  background-color: #45a049;
+}
+
+.buscar-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.usuarios-listado table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.usuarios-listado th, 
+.usuarios-listado td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.usuarios-listado th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.usuarios-listado tr:hover {
+  background-color: #f5f5f5;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-editar {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-editar:hover {
+  background-color: #0b7dda;
+}
+
+.btn-eliminar {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover {
+  background-color: #da190b;
+}
+
+.btn-eliminar:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn-guardar {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn-guardar:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: #d32f2f;
+  background-color: #fde8e8;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+
+
+
+
+/* En usuarios.css */
+.permisos-container {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.area-container {
+  margin-bottom: 15px;
+}
+
+.area-container h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.pagina-item {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.pagina-item label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.pagina-item input[type="checkbox"] {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Estilos para el modal grande */
+.modal-grande {
+  width: 800px;
+  max-width: 90%;
+}
+
+.form-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.form-column {
+  flex: 1;
+}
+
+.modulos-paginas-container {
+  margin-top: 20px;
+}
+
+.modulos-list {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.modulo-item {
+  margin-bottom: 15px;
+}
+
+.modulo-checkbox {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.modulo-checkbox input {
+  margin-right: 8px;
+}
+
+.modulo-nombre {
+  font-size: 1.1em;
+}
+
+.paginas-list {
+  margin-left: 25px;
+}
+
+.pagina-checkbox {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 3px 0;
+}
+
+.pagina-checkbox input {
+  margin-right: 8px;
+}
+
+.permisos-info {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.form-footer {
+  margin-top: 20px;
+  text-align: right;
+}
